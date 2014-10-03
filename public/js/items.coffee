@@ -15,7 +15,7 @@ window.items = [
   name: 'Chicken Biryani with Saffron Caulifower “Rice” and Sautéed Swiss Chard (Low Carb)'
   description: 'An Indian classic and one of Adam\'s favourite dinners.  Bone-in, skin-on chicken thighs from free-range,  non-medicated chickens in a tomato-based sauce with mild Indian spices.  Sautéed shredded cauliflower (or cauliflower “rice”) in place of regular rice lowers the carb count on this meal.'
   ingredients: ['chicken, ghee, onion, tomato, coconut milk, garlic, mint, cardamom, tumeric, black pepper, ginger, cumin, chili flakes, cinnamon, sea salt, cauliflower, saffron, swiss chard']
-  image: '/img/chicken_biryanii.jpg'
+  image: '/img/chicken_biryani.jpg'
 ,
   type: 'Entree'
   name: 'Meatloaf with Creamy Turnip and Garlic Purée and Steamed Lemon Broccoli (Low Carb and Autoimmune Protocol Approved)'
