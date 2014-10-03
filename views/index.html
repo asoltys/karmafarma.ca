@@ -6,43 +6,37 @@
     Delicious, nutrient-dense, paleo diet meals prepared by Chelsea with local, organic ingredients, delivered to your home or office twice a week.
     </p>
     <a href="/about"><button type="button" class="btn btn-primary">Learn More »</button></a>
-    <h2><span class="lead"><b>10</b></span> spots left. Sign up before October 15.</h2>
+    <h2><span class="lead"><b>10</b></span> spots left. Sign up by October 20.</h2>
     <button id="register-button" type="button" class="btn btn-primary">Register Now</button>
   </div>
 </div>
 
 <h2><span class="fa fa-calendar"> November 4 Delivery</span> <small>Selection open until midnight, November 2</small></h2>
 
-<form id="order" action="/orders" method="post">
-  {{#error}}
-    <div class="alert alert-danger">{{error}}</div>
-  {{/error}}
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="items">
-        <h3>Entrees <small><span class="count">0</span> / <span class="max">4</span></small></h3>
-        <div id="entrees"></div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="items">
-        <h3>Soups <small><span class="count">0</span> / <span class="max">2</span></small></h3>
-        <div id="soups"></div>
-      </div>
-
-      <div class="items">
-        <h3>Salads <small><span class="count">0</span> / <span class="max">2</span></small></h3>
-        <div id="salads"></div>
-      </div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="items">
+      <h3>Entrees <small><span class="count">0</span> / <span class="max">4</span></small></h3>
+      <div id="entrees"></div>
     </div>
   </div>
 
-  <div class="text-center">
-    <input class="btn btn-primary lead" type="submit" value="Place Order" />
+  <div class="col-md-6">
+    <div class="items">
+      <h3>Soups <small><span class="count">0</span> / <span class="max">2</span></small></h3>
+      <div id="soups"></div>
+    </div>
+
+    <div class="items">
+      <h3>Salads <small><span class="count">0</span> / <span class="max">2</span></small></h3>
+      <div id="salads"></div>
+    </div>
   </div>
-</form>
+</div>
+
+<div class="text-center">
+  <button id="order" type="button" class="btn btn-primary lead">Place Order</button>
+</div>
 
 <div class="modal fade" id="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog">

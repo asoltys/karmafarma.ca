@@ -1,6 +1,8 @@
-db = require("../redis")
+db = require('../redis')
+config = require('../config')
+sendgrid = require('sendgrid')(config.sendgrid_user, config.sendgrid_password)
 
-module.exports = ->
+module.exports =
   create: (req, res) ->
     userkey = "farm:#{req.body.email}"
     db.hmset(userkey,
@@ -10,13 +12,11 @@ module.exports = ->
     )
 
     res.render('welcome', 
-      user: req.params.user, 
       layout: 'mail',
       js: (-> global.js), 
       css: (-> global.css),
       (err, html) ->
-        sendgrid = require('sendgrid')(config.sendgrid_user, config.sendgrid_password)
-
+        throw err if err
         email = new sendgrid.Email(
           to: req.body.email
           from: 'sea.green@gmail.com'

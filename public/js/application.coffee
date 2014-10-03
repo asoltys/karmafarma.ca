@@ -47,10 +47,9 @@ $(->
     $.post('/users', $('#register').serialize())
   )
 
-  $('#order').submit(->
+  $('#order').click(->
     order = "BEEF"
-    $.post('/orders', order: order)
-    return false
+    $.post('/orders', email: 'asoltys@gmail.com', week: 1, order: order)
   )
 
   for item in window.items
