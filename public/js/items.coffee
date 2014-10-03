@@ -26,7 +26,7 @@ window.items = [
   type: 'Soup'
   name: 'Roasted Butternut Squash, Lime and Coconut Soup'
   description: 'The lime and coconut milk add a tropical flare to this warming puréed sqaush soup.'
-  ingredients: ['butternut squash', 'onion', 'coconut oil', 'chicken stock', 'lime', 'coconut milk', 'cilantro', 'jalapeno', 'cumin', 'corriander', 'sea salt', 'black pepper']
+  ingredients: ['butternut squash, onion, coconut oil, chicken stock, lime, coconut milk, cilantro, jalapeno, cumin, corriander, sea salt, black pepper']
   image: '/img/squash_soup.jpg'
 ,
   type: 'Soup'
