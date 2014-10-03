@@ -5,7 +5,7 @@ $(->
   $(document).on('click', '.plus, .minus', (e) -> 
     e.stopPropagation()
 
-    span = $(this).siblings('.lead')
+    span = $(this).siblings('.count')
     count = parseInt(span.html())
     total = parseInt($(this).closest('.items').find('h3 .count').html())
     max = parseInt($(this).closest('.items').find('.max').html())
@@ -22,6 +22,18 @@ $(->
     span.html(count.toString())
 
     updateTotals()
+  )
+
+  $(document).on('mouseenter', '.item', (e) -> 
+    e.stopPropagation()
+    $(this).find('.img').removeClass('grayscale')
+  )
+
+  $(document).on('mouseleave', '.item', (e) -> 
+    e.stopPropagation()
+    count = parseInt($(this).find('.panel-body .count').html())
+    if count is 0
+      $(this).find('.img').addClass('grayscale')
   )
 
   updateTotals = ->
