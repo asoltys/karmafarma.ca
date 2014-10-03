@@ -24,9 +24,9 @@ window.items = [
   image: '/img/beef_and_broccoli.jpg'
 ,
   type: 'Soup'
-  name: 'Carrot-Ginger Soup (Autoimmune Approved)'
-  description: 'This soup gains a pleasingly creamy consistency with the addition of coconut milk. ingredients: carrot, ginger, onion, apple, coconut milk, coconut oil, salt, pepper, nutmeg'
-  ingredients: ['Ginger', 'Cauliflower']
+  name: 'Roasted Butternut Squash, Lime and Coconut Soup'
+  description: 'The lime and coconut milk add a tropical flare to this warming puréed sqaush soup.'
+  ingredients: ['butternut squash', 'onion', 'coconut oil', 'chicken stock', 'lime', 'coconut milk', 'cilantro', 'jalapeno', 'cumin', 'corriander', 'sea salt', 'black pepper']
   image: '/img/carrot_ginger.jpg'
 ,
   type: 'Soup'
