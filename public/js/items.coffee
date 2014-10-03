@@ -27,13 +27,13 @@ window.items = [
   name: 'Roasted Butternut Squash, Lime and Coconut Soup'
   description: 'The lime and coconut milk add a tropical flare to this warming puréed sqaush soup.'
   ingredients: ['butternut squash', 'onion', 'coconut oil', 'chicken stock', 'lime', 'coconut milk', 'cilantro', 'jalapeno', 'cumin', 'corriander', 'sea salt', 'black pepper']
-  image: '/img/carrot_ginger.jpg'
+  image: '/img/squash_soup.jpg'
 ,
   type: 'Soup'
-  name: 'Steveston Fish Chowder (Low Carb)'
-  description: 'This red chowder starts out with a nutritious fish bone broth and includes plenty of seafood and vegetables. ingredients: ...'
-  ingredients: ['Ginger', 'Cauliflower']
-  image: '/img/beef_and_broccoli.jpg'
+  name: 'Cream of Broccoli Soup (Low Carb and Autoimmune Protocol Approved)'
+  description: 'Puréeing some of the veggies and adding coconut milk makes this soup satisfyingly creamy.'
+  ingredients: ['broccoli, rutabaga, mushroom, onion, garlic, coconut oil, chicken stock, coconut milk, sea salt, black pepper']
+  image: '/img/broccoli_soup.jpg'
 ,
   type: 'Salad'
   name: 'Kale-Beet-Chicken Salad (Autoimmune Approved)'
