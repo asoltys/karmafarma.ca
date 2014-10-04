@@ -38,7 +38,7 @@ window.items = [
   type: 'Salad'
   name: 'Chinese Chicken Salad (Low Carb and Low FODMAP)'
   description: 'Lots of veggies, tasty chicken and refreshing orange segments in a tangy ginger, tamari and sesame dressing.'
-  ingredients: ['chicken, arugala, green cabbage, carrot, celery, orange, bean sprouts, green onion, sesame seeds, ginger, olive oil, sesame oil, olive oil, rice vinegar, tamari, chili flakes, sea salt']
+  ingredients: ['chicken, arugala, lettuce, carrot, celery, orange, bean sprouts, cilantro, green onion (green parts only), sesame seeds, ginger, olive oil, sesame oil, rice vinegar, tamari, chili flakes, sea salt']
   image: '/img/chinese_salad.jpg'
 ,
   type: 'Salad'
