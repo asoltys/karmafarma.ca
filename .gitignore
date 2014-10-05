@@ -4,4 +4,5 @@ config.js
 builtAssets
 .project
 npm-debug.log
+public/js/rates.json
 
