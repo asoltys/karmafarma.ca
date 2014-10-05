@@ -6,7 +6,7 @@
     Delicious, nutrient-dense, paleo diet meals prepared by Chelsea with local, organic, ethically sourced ingredients, delivered to your home or office twice a week.
     </p>
     <a href="/about"><button type="button" class="btn btn-primary">Learn More »</button></a>
-    <h2><span class="lead"><b>10</b></span> spots left. Sign up by October 20.</h2>
+    <h2><span class="lead"><b id="users">{{users}}</b></span> spots left. Sign up by October 20.</h2>
     <button id="register-button" type="button" class="btn btn-primary">Register Now</button>
   </div>
 </div>
@@ -47,34 +47,72 @@
       </div>
 
       <div class="modal-body">
-        <form id="register" action="/users" method="post">
-          {{#error}}
-            <div class="alert alert-danger">{{error}}</div>
-          {{/error}}
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active"><a id="step1_link" href="#step1" role="tab" data-toggle="tab">Details</a></li>
+          <li><a id="step2_link" href="#step2" role="tab" data-toggle="tab">Payment</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="step1" class="tab-pane active">
+            <form id="register" action="/users" method="post">
+              {{#error}}
+                <div class="alert alert-danger">{{error}}</div>
+              {{/error}}
 
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" class="form-control" />
-          </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" class="form-control" />
+              </div>
 
-          <div class="form-group">
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone" class="form-control" />
-          </div>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" class="form-control" />
+              </div>
 
-          <div class="form-group">
-            <label for="address">Delivery Address:</label>
-            <textarea name="address" class="form-control"></textarea>
-          </div>
+              <div class="form-group">
+                <label for="address">Delivery Address:</label>
+                <textarea name="address" class="form-control" placeholder="Home or office address where the meals should be delivered"></textarea>
+              </div>
 
-          <div class="form-group">
-            <label for="address">Notes:</label>
-            <textarea name="address" class="form-control" placeholder="e.g. Please leave meals with my receptionist, Alex."></textarea>
+              <div class="form-group">
+                <label for="address">Notes/Allergies:</label>
+                <textarea name="address" class="form-control" placeholder="e.g. Come to the 4th floor and leave the meals in the cooler at the reception desk.  I'm allergic to nuts."></textarea>
+              </div>
+            </form>
           </div>
-        </form>
+          <div id="step2" class="tab-pane">
+            <div id="choose">
+              <h2>Select a Payment Option</h2>
+
+              <button id="bitcoin" type="button" class="btn btn-default lead" style="width: 100%">$450 in Bitcoin</button>
+              <br /><br />
+              <button id="cash" type="button" class="btn btn-default" style="width: 100%">
+              <span class="lead" style="margin-bottom: -20px">$480 in Cash</span>
+              <br />
+              <small style="font-size: 18px">(payable upon first delivery or in weekly installments of $120)</small>
+              </button>
+            </div>
+
+            <div id="pay_bitcoin" style="display: none">
+              <h2>Pay with Bitcoin</h2>
+              <div id="request" class="text-center">
+                <pre id="address"></pre>
+                <div id="qr" style="margin-left: 150px; margin-bottom: 15px;"></div>
+                <p>Need to get some Bitcoins?  Try <a href="http://circle.com/" target="_blank">circle.com</a>, they take VISA.</p>
+              </div>
+              <button id="received" class="btn btn-success" style="display: none; width: 100%">Payment received!  You're registered!</button>
+            </div>
+
+            <div id="pay_cash" style="display: none">
+              <h2>Pay with Cash</h2>
+
+              <p>Ok, you're registered!  Please have cash ready for us on November 4th.  You can pay up front or in weekly installments of $120 every Tuesday.</p>
+            </div>
+          </div>
       </div>
       <div class="modal-footer">
-        <button type="button" id="close" class="btn btn-primary" data-dismiss="modal">Sign me up!</button>
+        <button type="button" id="next" class="btn btn-primary">Next</button>
+        <button type="button" id="cancel" class="btn btn-default" style="display: none">Cancel</button>
+        <button type="button" id="close" class="btn btn-primary" style="display: none" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

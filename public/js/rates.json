@@ -1,0 +1,738 @@
+{
+  "AUD": {
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 405.44,
+        "bid": 405.44,
+        "last": 405.44
+      },
+      "source": "cache",
+      "volume_btc": 50.1,
+      "volume_percent": 100.0
+    }
+  },
+  "BRL": {
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 962.9,
+        "bid": 962.9,
+        "last": 962.9
+      },
+      "source": "cache",
+      "volume_btc": 2.84,
+      "volume_percent": 2.67
+    },
+    "mercado": {
+      "display_URL": "https://www.mercadobitcoin.com.br/",
+      "display_name": "Mercado Bitcoin",
+      "rates": {
+        "ask": 850.0,
+        "bid": 847.0,
+        "last": 850.0
+      },
+      "source": "cache",
+      "volume_btc": 103.7,
+      "volume_percent": 97.33
+    }
+  },
+  "CAD": {
+    "cavirtex": {
+      "display_URL": "https://www.cavirtex.com/",
+      "display_name": "VirtEx",
+      "rates": {
+        "ask": 341.99,
+        "bid": 332.01,
+        "last": 341.99
+      },
+      "source": "cache",
+      "volume_btc": 1062.75,
+      "volume_percent": 70.65
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 407.29,
+        "bid": 407.29,
+        "last": 407.29
+      },
+      "source": "cache",
+      "volume_btc": 22.58,
+      "volume_percent": 1.5
+    },
+    "quadrigacx": {
+      "display_URL": "https://quadrigacx.com",
+      "display_name": "QuadrigaCX",
+      "rates": {
+        "ask": 344.93,
+        "bid": 343.12,
+        "last": 344.93
+      },
+      "source": "cache",
+      "volume_btc": 208.39,
+      "volume_percent": 13.85
+    },
+    "vaultofsatoshi": {
+      "display_URL": "https://vaultofsatoshi.com",
+      "display_name": "Vault of Satoshi",
+      "rates": {
+        "ask": 350.0,
+        "bid": 350.0,
+        "last": 350.0
+      },
+      "source": "api",
+      "volume_btc": 210.62,
+      "volume_percent": 14.0
+    }
+  },
+  "CHF": {},
+  "CNY": {
+    "btc38": {
+      "display_URL": "http://btc38.com/",
+      "display_name": "BTC38",
+      "rates": {
+        "ask": 2067.0,
+        "bid": 2059.0,
+        "last": 2065.0
+      },
+      "source": "cache",
+      "volume_btc": 777.72,
+      "volume_percent": 1.49
+    },
+    "btcchina": {
+      "display_URL": "https://btcchina.com/",
+      "display_name": "BTC China",
+      "rates": {
+        "ask": 2065.16,
+        "bid": 2064.11,
+        "last": 2065.16
+      },
+      "source": "cache",
+      "volume_btc": 50931.35,
+      "volume_percent": 97.41
+    },
+    "bter": {
+      "display_URL": "https://bter.com/",
+      "display_name": "Bter",
+      "rates": {
+        "ask": 2060.11,
+        "bid": 2060.02,
+        "last": 2060.02
+      },
+      "source": "cache",
+      "volume_btc": 561.18,
+      "volume_percent": 1.07
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 0.0,
+        "bid": 0.0,
+        "last": 0.0
+      },
+      "source": "cache",
+      "volume_btc": 16.81,
+      "volume_percent": 0.03
+    }
+  },
+  "EUR": {
+    "bitcoin_central": {
+      "display_URL": "https://bitcoin-central.net",
+      "display_name": "Bitcoin Central",
+      "rates": {
+        "ask": 263.0,
+        "bid": 255.0,
+        "last": 263.0
+      },
+      "source": "cache",
+      "volume_btc": 108.21,
+      "volume_percent": 2.27
+    },
+    "bitcoin_de": {
+      "display_URL": "https://bitcoin.de",
+      "display_name": "Bitcoin.de",
+      "rates": {
+        "ask": 269.81,
+        "bid": 269.81,
+        "last": 269.81
+      },
+      "source": "cache",
+      "volume_btc": 730.88,
+      "volume_percent": 15.36
+    },
+    "bitonic": {
+      "display_URL": "https://bitonic.nl",
+      "display_name": "Bitonic",
+      "rates": {
+        "ask": 264.32,
+        "bid": 264.32,
+        "last": 264.32
+      },
+      "source": "cache",
+      "volume_btc": 417.58,
+      "volume_percent": 8.78
+    },
+    "bittylicious": {
+      "display_URL": "https://bittylicious.com/",
+      "display_name": "Bittylicious",
+      "rates": {
+        "ask": 304.45,
+        "bid": 304.45,
+        "last": 304.45
+      },
+      "source": "api",
+      "volume_btc": 3.2,
+      "volume_percent": 0.07
+    },
+    "btce": {
+      "display_URL": "https://btc-e.com/",
+      "display_name": "BTC-e",
+      "rates": {
+        "ask": 270.31,
+        "bid": 266.61,
+        "last": 266.22
+      },
+      "source": "cache",
+      "volume_btc": 248.12,
+      "volume_percent": 5.21
+    },
+    "cryptonit": {
+      "display_URL": "https://www.cryptonit.net/",
+      "display_name": "Cryptonit",
+      "rates": {
+        "ask": 243.9,
+        "bid": 267.14,
+        "last": 267.14
+      },
+      "source": "cache",
+      "volume_btc": 0.55,
+      "volume_percent": 0.01
+    },
+    "hitbtc": {
+      "display_URL": "https://hitbtc.com/",
+      "display_name": "Hitbtc",
+      "rates": {
+        "ask": 267.11,
+        "bid": 266.32,
+        "last": 265.34
+      },
+      "source": "cache",
+      "volume_btc": 770.16,
+      "volume_percent": 16.19
+    },
+    "itbit": {
+      "display_URL": "https://www.itbit.com",
+      "display_name": "itBit",
+      "rates": {
+        "ask": 266.56,
+        "bid": 266.27,
+        "last": 289.86
+      },
+      "source": "cache",
+      "volume_btc": 96.89,
+      "volume_percent": 2.04
+    },
+    "kraken": {
+      "display_URL": "https://kraken.com/",
+      "display_name": "Kraken",
+      "rates": {
+        "ask": 264.74,
+        "bid": 264.15,
+        "last": 264.74
+      },
+      "source": "cache",
+      "volume_btc": 2304.15,
+      "volume_percent": 48.43
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 348.7,
+        "bid": 348.7,
+        "last": 348.7
+      },
+      "source": "cache",
+      "volume_btc": 78.26,
+      "volume_percent": 1.64
+    },
+    "rocktrading": {
+      "display_URL": "https://therocktrading.com/",
+      "display_name": "Rock Trading",
+      "rates": {
+        "ask": 265.0,
+        "bid": 262.27,
+        "last": 262.27
+      },
+      "source": "cache",
+      "volume_btc": 0.05,
+      "volume_percent": 0.0
+    },
+    "vircurex": {
+      "display_URL": "https://vircurex.com/",
+      "display_name": "Vircurex",
+      "rates": {
+        "ask": 440.0,
+        "bid": 355.0,
+        "last": 355.0
+      },
+      "source": "cache",
+      "volume_btc": 0.0,
+      "volume_percent": 0.0
+    }
+  },
+  "GBP": {
+    "bitbargain": {
+      "display_URL": "https://bitbargain.co.uk/",
+      "display_name": "BitBargain",
+      "rates": {
+        "ask": 228.38,
+        "bid": 228.38,
+        "last": 228.38
+      },
+      "source": "cache",
+      "volume_btc": 110.23,
+      "volume_percent": 14.7
+    },
+    "bittylicious": {
+      "display_URL": "https://bittylicious.com/",
+      "display_name": "Bittylicious",
+      "rates": {
+        "ask": 222.21,
+        "bid": 222.21,
+        "last": 222.21
+      },
+      "source": "api",
+      "volume_btc": 70.86,
+      "volume_percent": 9.45
+    },
+    "coinfloor": {
+      "display_URL": "https://coinfloor.co.uk/",
+      "display_name": "Coinfloor",
+      "rates": {
+        "ask": 236.0,
+        "bid": 231.01,
+        "last": 231.01
+      },
+      "source": "cache",
+      "volume_btc": 79.34,
+      "volume_percent": 10.58
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 218.77,
+        "bid": 218.77,
+        "last": 218.77
+      },
+      "source": "cache",
+      "volume_btc": 481.57,
+      "volume_percent": 64.22
+    },
+    "quickbitcoin": {
+      "display_URL": "https://quickbitcoin.co.uk",
+      "display_name": "QuickBitcoin",
+      "rates": {
+        "ask": 225.07,
+        "bid": 225.07,
+        "last": 225.07
+      },
+      "source": "cache",
+      "volume_btc": 7.85,
+      "volume_percent": 1.05
+    }
+  },
+  "HKD": {
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 0.0,
+        "bid": 0.0,
+        "last": 0.0
+      },
+      "source": "cache",
+      "volume_btc": 36.1,
+      "volume_percent": 100.0
+    }
+  },
+  "IDR": {
+    "bitcoin_co_id": {
+      "display_URL": "https://bitcoin.co.id/",
+      "display_name": "Bitcoin.co.id",
+      "rates": {
+        "ask": 4148000.0,
+        "bid": 4112000.0,
+        "last": 4112000.0
+      },
+      "source": "cache",
+      "volume_btc": 70.32,
+      "volume_percent": 100.0
+    }
+  },
+  "ILS": {
+    "bit2c": {
+      "display_URL": "https://www.bit2c.co.il/",
+      "display_name": "Bit2C",
+      "rates": {
+        "ask": 1250.0,
+        "bid": 1151.0,
+        "last": 1249.0
+      },
+      "source": "cache",
+      "volume_btc": 10.74,
+      "volume_percent": 100.0
+    }
+  },
+  "MXN": {
+    "bitso": {
+      "display_URL": "https://bitso.com/",
+      "display_name": "Bitso",
+      "rates": {
+        "ask": 4896.0,
+        "bid": 4590.0,
+        "last": 4925.0
+      },
+      "source": "cache",
+      "volume_btc": 4.49,
+      "volume_percent": 26.29
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 4746.75,
+        "bid": 4746.75,
+        "last": 4746.75
+      },
+      "source": "cache",
+      "volume_btc": 12.59,
+      "volume_percent": 73.71
+    }
+  },
+  "NOK": {
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 2311.12,
+        "bid": 2311.12,
+        "last": 2311.12
+      },
+      "source": "cache",
+      "volume_btc": 0.5,
+      "volume_percent": 100.0
+    }
+  },
+  "NZD": {
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 455.56,
+        "bid": 455.56,
+        "last": 455.56
+      },
+      "source": "cache",
+      "volume_btc": 3.08,
+      "volume_percent": 100.0
+    }
+  },
+  "PLN": {},
+  "RON": {
+    "btcxchange": {
+      "display_URL": "https://www.btcxchange.ro/",
+      "display_name": "BTCXchange",
+      "rates": {
+        "ask": 1180.0,
+        "bid": 1117.0,
+        "last": 1098.0
+      },
+      "source": "cache",
+      "volume_btc": 0.46,
+      "volume_percent": 31.51
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 1207.67,
+        "bid": 1207.67,
+        "last": 1207.67
+      },
+      "source": "cache",
+      "volume_btc": 1.0,
+      "volume_percent": 68.49
+    }
+  },
+  "RUB": {
+    "btce": {
+      "display_URL": "https://btc-e.com/",
+      "display_name": "BTC-e",
+      "rates": {
+        "ask": 13870.72,
+        "bid": 13690.72,
+        "last": 13740.21
+      },
+      "source": "cache",
+      "volume_btc": 256.08,
+      "volume_percent": 80.57
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 13281.55,
+        "bid": 13281.55,
+        "last": 13281.55
+      },
+      "source": "cache",
+      "volume_btc": 61.75,
+      "volume_percent": 19.43
+    }
+  },
+  "SEK": {
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 2655.39,
+        "bid": 2655.39,
+        "last": 2655.39
+      },
+      "source": "cache",
+      "volume_btc": 7.69,
+      "volume_percent": 100.0
+    }
+  },
+  "SGD": {
+    "itbit": {
+      "display_URL": "https://www.itbit.com",
+      "display_name": "itBit",
+      "rates": {
+        "ask": 427.99,
+        "bid": 426.91,
+        "last": 465.37
+      },
+      "source": "cache",
+      "volume_btc": 239.05,
+      "volume_percent": 100.0
+    }
+  },
+  "TRY": {},
+  "USD": {
+    "bitex": {
+      "display_URL": "https://bitex.la/",
+      "display_name": "Bitex.la",
+      "rates": {
+        "ask": 333.56,
+        "bid": 328.73,
+        "last": 327.19
+      },
+      "source": "cache",
+      "volume_btc": 24.61,
+      "volume_percent": 0.03
+    },
+    "bitfinex": {
+      "display_URL": "https://www.bitfinex.com/?refcode=hrFt7v3ogn",
+      "display_name": "Bitfinex",
+      "rates": {
+        "ask": 335.04,
+        "bid": 334.76,
+        "last": 334.72
+      },
+      "source": "cache",
+      "volume_btc": 38932.53,
+      "volume_percent": 45.4
+    },
+    "bitkonan": {
+      "display_URL": "https://bitkonan.com/",
+      "display_name": "BitKonan",
+      "rates": {
+        "ask": 349.0,
+        "bid": 307.01,
+        "last": 336.0
+      },
+      "source": "cache",
+      "volume_btc": 4.33,
+      "volume_percent": 0.01
+    },
+    "bitstamp": {
+      "display_URL": "https://bitstamp.net/",
+      "display_name": "Bitstamp",
+      "rates": {
+        "ask": 332.9,
+        "bid": 332.22,
+        "last": 332.91
+      },
+      "source": "cache",
+      "volume_btc": 29439.02,
+      "volume_percent": 34.33
+    },
+    "btce": {
+      "display_URL": "https://btc-e.com/",
+      "display_name": "BTC-e",
+      "rates": {
+        "ask": 320.67,
+        "bid": 320.6,
+        "last": 320.67
+      },
+      "source": "cache",
+      "volume_btc": 13467.55,
+      "volume_percent": 15.7
+    },
+    "campbx": {
+      "display_URL": "https://campbx.com",
+      "display_name": "CampBX",
+      "rates": {
+        "ask": 336.94,
+        "bid": 335.47,
+        "last": 336.94
+      },
+      "source": "cache",
+      "volume_btc": 33.98,
+      "volume_percent": 0.04
+    },
+    "cointrader": {
+      "display_URL": "https://www.cointrader.net/",
+      "display_name": "Cointrader",
+      "rates": {
+        "ask": 333.0,
+        "bid": 328.89,
+        "last": 333.34
+      },
+      "source": "api",
+      "volume_btc": 95.41,
+      "volume_percent": 0.11
+    },
+    "cryptonit": {
+      "display_URL": "https://www.cryptonit.net/",
+      "display_name": "Cryptonit",
+      "rates": {
+        "ask": 310.0,
+        "bid": 333.22,
+        "last": 333.22
+      },
+      "source": "cache",
+      "volume_btc": 3.16,
+      "volume_percent": 0.0
+    },
+    "hitbtc": {
+      "display_URL": "https://hitbtc.com/",
+      "display_name": "Hitbtc",
+      "rates": {
+        "ask": 334.13,
+        "bid": 333.25,
+        "last": 333.32
+      },
+      "source": "cache",
+      "volume_btc": 932.87,
+      "volume_percent": 1.09
+    },
+    "itbit": {
+      "display_URL": "https://www.itbit.com",
+      "display_name": "itBit",
+      "rates": {
+        "ask": 333.85,
+        "bid": 332.97,
+        "last": 362.91
+      },
+      "source": "cache",
+      "volume_btc": 1772.09,
+      "volume_percent": 2.07
+    },
+    "kraken": {
+      "display_URL": "https://kraken.com/",
+      "display_name": "Kraken",
+      "rates": {
+        "ask": 339.97,
+        "bid": 322.14,
+        "last": 322.11
+      },
+      "source": "cache",
+      "volume_btc": 38.06,
+      "volume_percent": 0.04
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 382.66,
+        "bid": 382.66,
+        "last": 382.66
+      },
+      "source": "cache",
+      "volume_btc": 959.53,
+      "volume_percent": 1.12
+    },
+    "rocktrading": {
+      "display_URL": "https://therocktrading.com/",
+      "display_name": "Rock Trading",
+      "rates": {
+        "ask": 333.41,
+        "bid": 332.85,
+        "last": 336.64
+      },
+      "source": "cache",
+      "volume_btc": 26.56,
+      "volume_percent": 0.03
+    },
+    "vaultofsatoshi": {
+      "display_URL": "https://vaultofsatoshi.com",
+      "display_name": "Vault of Satoshi",
+      "rates": {
+        "ask": 317.0,
+        "bid": 317.0,
+        "last": 317.0
+      },
+      "source": "api",
+      "volume_btc": 22.99,
+      "volume_percent": 0.03
+    },
+    "vircurex": {
+      "display_URL": "https://vircurex.com/",
+      "display_name": "Vircurex",
+      "rates": {
+        "ask": 425.0,
+        "bid": 420.12,
+        "last": 420.12
+      },
+      "source": "cache",
+      "volume_btc": 0.85,
+      "volume_percent": 0.0
+    }
+  },
+  "ZAR": {
+    "bitx": {
+      "display_URL": "https://bitx.co.za/",
+      "display_name": "BitX",
+      "rates": {
+        "ask": 4098.09,
+        "bid": 3505.0,
+        "last": 3505.0
+      },
+      "source": "cache",
+      "volume_btc": 69.59,
+      "volume_percent": 89.79
+    },
+    "localbitcoins": {
+      "display_URL": "https://localbitcoins.com/?ch=22yh",
+      "display_name": "LocalBitcoins",
+      "rates": {
+        "ask": 3961.51,
+        "bid": 3961.51,
+        "last": 3961.51
+      },
+      "source": "cache",
+      "volume_btc": 7.91,
+      "volume_percent": 10.21
+    }
+  },
+  "timestamp": "Sun, 05 Oct 2014 02:07:40 -0000"
+}
