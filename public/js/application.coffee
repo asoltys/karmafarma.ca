@@ -4,30 +4,31 @@
 
 g = this
 $(->
-  setTimeout(listen, 10000)
 
   $.get('/js/rates.json', (data) ->
     g.rates = data
-  )
 
-  $('#bitcoin').click(->
-    rate = g.rates.CAD.cavirtex.rates.bid
-    g.amount = parseFloat(0.04 / rate).toFixed(8)
-    g.address = '15dRBzyg68NXRraGQVpa4MgbohyZEFH7sM'
+    $('#bitcoin').click(->
+      rate = g.rates.CAD.cavirtex.rates.bid
+      g.amount = parseFloat(0.04 / rate).toFixed(8)
+      g.address = '15dRBzyg68NXRraGQVpa4MgbohyZEFH7sM'
 
-    $('#request p').html("Please send #{g.amount} BTC to:")
-    $('#address').html(g.address)
+      $('#request h2').html("Please send #{g.amount} BTC to:")
+      $('#address').html(g.address)
 
-    $('#qr').html('')
-    new QRCode('qr', 
-      text: "bitcoin:#{g.address}?amount=#{g.amount}"
-      width: 250
-      height: 250
+      $('#qr').html('')
+      new QRCode('qr', 
+        text: "bitcoin:#{g.address}?amount=#{g.amount}"
+        width: 250
+        height: 250
+      )
+
+      $('#cancel, #pay_bitcoin').show()
+      $('#choose').hide()
+      setTimeout(listen, 10000) unless g.blockchain
     )
-
-    $('#cancel, #pay_bitcoin').show()
-    $('#choose').hide()
   )
+
 
   $('#cash').click(->
     $('#close, #pay_cash').show()
@@ -134,15 +135,14 @@ listen = ->
       $('#connection').fadeIn().removeClass('glyphicon-exclamation-sign').addClass('glyphicon-signal')
       g.blockchain.send('{"op":"addr_sub", "addr":"' + g.address + '"}')
     
-    g.blockchain.onerror =  ->
+    g.blockchain.onerror = (err) ->
+      console.log(err)
       $('#connection').addClass('glyphicon-exclamation-sign').removeClass('glyphicon-signal')
       g.blockchain = null
-      fail(SOCKET_FAIL)
 
     g.blockchain.onclose = ->
       $('#connection').addClass('glyphicon-exclamation-sign').removeClass('glyphicon-signal')
       g.blockchain = null
-      fail(SOCKET_FAIL)
 
     g.blockchain.onmessage = (e) ->
       results = eval('(' + e.data + ')')
@@ -155,8 +155,8 @@ listen = ->
       )
 
       if amount >= g.amount
-        $('#received').show()
-        $('#request').hide()
+        $('#received, #close').show()
+        $('#request, #cancel').hide()
         register()
 
 register = ->
