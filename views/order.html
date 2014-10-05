@@ -1,3 +1,8 @@
 <h1>Order</h1>
 
-<p>{{order}}</p>
+<ul>
+  {{#order}}
+  <li>{{count}}x {{item}}</li>
+  {{/order}}
+</ul>
+

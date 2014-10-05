@@ -4,7 +4,6 @@
 
 g = this
 $(->
-
   $.get('/js/rates.json', (data) ->
     g.rates = data
 
@@ -28,7 +27,6 @@ $(->
       setTimeout(listen, 10000) unless g.blockchain
     )
   )
-
 
   $('#cash').click(->
     $('#close, #pay_cash').show()
@@ -65,6 +63,7 @@ $(->
 
     img = $(this).closest('.item').find('.img')
     img.toggleClass('grayscale', count is 0)
+
     span.html(count.toString())
 
     updateTotals()
@@ -102,8 +101,14 @@ $(->
   )
 
   $('#order').click(->
-    order = "BEEF"
-    $.post('/orders', email: 'asoltys@gmail.com', week: 1, order: order)
+    order = []
+    $('.img:not(.grayscale)').closest('.item').each(->
+      name = $(this).find('.name').html()
+      count = $(this).find('.panel-body .count').html()
+      order.push(item: name, count: count)
+    )
+
+    $.post('/orders', email: 'asoltys@gmail.com', week: 1, order: JSON.stringify(order))
   )
 
   for item in g.items
@@ -136,7 +141,6 @@ listen = ->
       g.blockchain.send('{"op":"addr_sub", "addr":"' + g.address + '"}')
     
     g.blockchain.onerror = (err) ->
-      console.log(err)
       $('#connection').addClass('glyphicon-exclamation-sign').removeClass('glyphicon-signal')
       g.blockchain = null
 

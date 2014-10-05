@@ -10,7 +10,7 @@ module.exports =
 
     res.render('order', 
       layout: 'mail',
-      order: req.body.order,
+      order: JSON.parse(req.body.order),
       js: (-> global.js), 
       css: (-> global.css),
       (err, html) ->
