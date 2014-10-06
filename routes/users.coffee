@@ -10,25 +10,28 @@ module.exports =
     )
 
   create: (req, res) ->
-    userkey = "farm:#{req.body.email}"
-    db.hmset(userkey,
-      email: req.body.email,
-      phone: req.body.phone,
+    user = 
+      email: req.body.email
+      phone: req.body.phone
       address: req.body.address
-    )
+      notes: req.body.notes
 
-    res.render('welcome', 
-      layout: 'mail',
-      js: (-> global.js), 
-      css: (-> global.css),
-      (err, html) ->
-        throw err if err
-        email = new sendgrid.Email(
-          to: [req.body.email, 'sea.green@gmail.com']
-          from: 'sea.green@gmail.com'
-          subject: 'Welcome to Karma Farma'
-          html: html
-        )
+    key = "farm:#{req.body.email}"
+    db.hmset(key, user, ->
+      res.render('welcome', 
+        layout: 'mail'
+        user: user
+        js: (-> global.js)
+        css: (-> global.css)
+        (err, html) ->
+          throw err if err
+          email = new sendgrid.Email(
+            to: [req.body.email, 'sea.green@gmail.com']
+            from: 'sea.green@gmail.com'
+            subject: 'Welcome to Karma Farma'
+            html: html
+          )
 
-        sendgrid.send(email)
+          sendgrid.send(email)
+      )
     )

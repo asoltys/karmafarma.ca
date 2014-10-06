@@ -1,6 +1,13 @@
 <h1>Welcome to Karma Farma</h1>
 
-<p>Thanks for signing up! First delivery will be on November 4th.  Please place your order by midnight on November 2nd.  Let me know if you have any other questions or comments.</p>
+
+<p>Thanks for signing up! First delivery will be on November 4th.  Please place your order by midnight on November 2nd.  Let me know if you have any other questions or comments or if your delivery address or contact details change:</p>
+
+{{#user}}
+<p>Phone: {{phone}}</p>
+<p>Delivery Address: {{address}}</p>
+<p>Notes: {{notes}}</p>
+{{/user}}
 
 <p>Sincerely,</p>
 

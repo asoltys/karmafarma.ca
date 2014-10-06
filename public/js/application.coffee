@@ -45,7 +45,18 @@ $(->
     $('#next').toggle(e.target.attributes.href.value == '#step1')
   )
 
-  $('#next').click(-> $('#step2_link').click())
+  $('#next').click(-> $('#register').submit())
+  $('#register').submit(-> 
+    email = $('#email').val()
+
+    if validateEmail(email)
+      $('#step2_link').click()
+    else
+      $('#email').parent().addClass('has-error')
+      $('#email').focus()
+
+    return false
+  )
 
   $(document).on('click', '.plus, .minus', (e) -> 
     e.stopPropagation()
