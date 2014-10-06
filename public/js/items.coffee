@@ -26,13 +26,13 @@ window.items = [
   type: 'Soup'
   name: 'Roasted Butternut Squash, Lime and Coconut Soup'
   description: 'The lime and coconut milk add a tropical flare to this warming puréed sqaush soup.'
-  ingredients: ['butternut squash, onion, coconut oil, chicken stock, lime, coconut milk, cilantro, jalapeno, cumin, corriander, sea salt, black pepper']
+  ingredients: ['butternut squash, onion, coconut oil, chicken bone broth, lime, coconut milk, cilantro, jalapeno, cumin, corriander, sea salt, black pepper']
   image: '/img/squash_soup.jpg'
 ,
   type: 'Soup'
   name: 'Cream of Broccoli Soup (Low Carb and Autoimmune Protocol Approved)'
   description: 'Puréeing some of the veggies and adding coconut milk makes this soup satisfyingly creamy.'
-  ingredients: ['broccoli, rutabaga, mushroom, onion, garlic, coconut oil, chicken stock, coconut milk, sea salt, black pepper']
+  ingredients: ['broccoli, rutabaga, mushroom, onion, garlic, coconut oil, chicken bone broth, coconut milk, sea salt, black pepper']
   image: '/img/broccoli_soup.jpg'
 ,
   type: 'Salad'
