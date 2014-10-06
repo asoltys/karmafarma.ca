@@ -11,6 +11,7 @@ module.exports =
 
   create: (req, res) ->
     user = 
+      name: req.body.name
       email: req.body.email
       phone: req.body.phone
       address: req.body.address

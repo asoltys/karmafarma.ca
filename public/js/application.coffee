@@ -111,7 +111,7 @@ $(->
   )
 
   $('#modal').on('shown.bs.modal', ->
-    $('#email').focus()
+    $('#name').focus()
   )
 
   $('#order').click(-> 
