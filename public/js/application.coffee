@@ -115,6 +115,9 @@ $(->
   )
 
   $('#order').click(-> 
+    $('#order_close, #order_done, #order_placed').hide()
+    $('#order_cancel, #order_confirm').show()
+
     g.order = []
     total = 0
     $('#list').html('')
@@ -138,11 +141,11 @@ $(->
   )
 
   $('#confirm_form').submit(->
-    $('#confirm').click()
+    $('#order_confirm').click()
     return false
   )
 
-  $('#confirm').click(->
+  $('#order_confirm').click(->
     email = $('#order_email').val()
     unless validateEmail(email)
       $('#order_email').parent().addClass('has-error')
@@ -152,7 +155,7 @@ $(->
       if data and data != "null"
         $.post('/orders', email: 'asoltys@gmail.com', week: 'Nov4', order: JSON.stringify(g.order))
         $('#order_close, #order_done, #order_placed').show()
-        $('#cancel, #confirm').hide()
+        $('#order_cancel, #order_confirm').hide()
       else
         $('#not_registered').show()
         $('#order_email').parent().addClass('has-error')
