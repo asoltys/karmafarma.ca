@@ -10,7 +10,7 @@ $(->
 
     $('#bitcoin').click(->
       rate = g.rates.CAD.cavirtex.rates.bid
-      g.amount = parseFloat(0.04 / rate).toFixed(8)
+      g.amount = parseFloat(450 / rate).toFixed(8)
       g.address = '15dRBzyg68NXRraGQVpa4MgbohyZEFH7sM'
 
       $('#request h2').html("Please send #{g.amount} BTC to:")
@@ -30,7 +30,7 @@ $(->
   )
 
   $('#cash').click(->
-    $('#close, #pay_cash').show()
+    $('#close, #pay_cash, #registered').show()
     $('#choose').hide()
     register()
   ) 
@@ -155,7 +155,7 @@ $(->
       if data and data != "null"
         $.post('/orders', email: 'asoltys@gmail.com', week: 'Nov4', order: JSON.stringify(g.order))
         $('#order_close, #order_done, #order_placed').show()
-        $('#order_cancel, #order_confirm').hide()
+        $('#order_cancel, #order_confirm, #order_warning').hide()
       else
         $('#not_registered').show()
         $('#order_email').parent().addClass('has-error')
@@ -215,7 +215,7 @@ listen = ->
       )
 
       if amount >= g.amount
-        $('#received, #close').show()
+        $('#registered, #close').show()
         $('#request, #cancel').hide()
         register()
 
