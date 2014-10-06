@@ -53,13 +53,15 @@ $(->
     span = $(this).siblings('.count')
     count = parseInt(span.html())
     total = parseInt($(this).closest('.items').find('h3 .count').html())
-    max = 2
+    max = parseInt($(this).closest('.items').find('.max').html())
 
     n = 1
     n = -1 if $(this).hasClass('minus')
 
     return if count is 0 and n is -1
+    return if count is 2 and n is 1
     return if total is max and n is 1
+
     count += n
 
     img = $(this).closest('.item').find('.img')
@@ -103,16 +105,30 @@ $(->
 
   $('#order').click(-> 
     g.order = []
+    total = 0
     $('#list').html('')
 
     $('.img:not(.grayscale)').closest('.item').each(->
       name = $(this).find('.name').html()
       count = $(this).find('.panel-body .count').html()
+      total += parseInt(count)
       g.order.push(item: name, count: count)
       $('#list').append("<li><b>#{count}x</b> #{name}</li>")
     )
 
+    $('#warning_count').html(total)
+    $('#order_warning').toggle(total < 8)
+
     $('#confirmation').modal()
+  )
+
+  $('#confirmation').on('shown.bs.modal', ->
+    $('#order_email').focus()
+  )
+
+  $('#confirm_form').submit(->
+    $('#confirm').click()
+    return false
   )
 
   $('#confirm').click(->
@@ -123,11 +139,19 @@ $(->
 
     $.get("/users/#{encodeURIComponent(email)}", (data) ->
       if data and data != "null"
-        $.post('/orders', email: 'asoltys@gmail.com', week: 1, order: JSON.stringify(g.order))
-        $('#confirmation').modal('hide')
+        $.post('/orders', email: 'asoltys@gmail.com', week: 'Nov4', order: JSON.stringify(g.order))
+        $('#confirmation .modal-body').html('<h2 class="alert alert-success">Thanks! Your order has been placed!</h2>')
+        $('#order_close, #order_done').show()
+        $('#cancel, #confirm').hide()
       else
+        $('#not_registered').show()
         $('#order_email').parent().addClass('has-error')
     )
+  )
+
+  $('#register_link').click(->
+    $('#confirmation').modal('hide')
+    $('#modal').modal()
   )
 
   for item in g.items

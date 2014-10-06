@@ -83,12 +83,14 @@
             <div id="choose">
               <h2>Select a Payment Option</h2>
 
-              <button id="bitcoin" type="button" class="btn btn-default lead" style="width: 100%">Bitcoin - $450</button>
+              <button id="bitcoin" type="button" class="btn btn-default" style="width: 100%">
+                <span class="lead" style="margin-bottom: -20px">Bitcoin - $450</span><br />
+                <small style="font-size: 18px">(need bitcoins?  try <a href="http://circle.com/" target="_blank">circle.com</a>)</small>
+              </button>
               <br /><br />
               <button id="cash" type="button" class="btn btn-default" style="width: 100%">
-              <span class="lead" style="margin-bottom: -20px">Cash - $480</span>
-              <br />
-              <small style="font-size: 18px">(payable upon first delivery or in weekly installments of $120)</small>
+                <span class="lead" style="margin-bottom: -20px">Cash - $480</span><br />
+                <small style="font-size: 18px">(payable upon first delivery or in weekly installments)</small>
               </button>
             </div>
 
@@ -103,8 +105,8 @@
             </div>
 
             <div id="pay_cash" style="display: none">
-              <div class="alert alert-success">
-                <h2>Registered!</h2>
+              <div class="alert alert-success" style="margin-top: 15px">
+                <h2>Ok!  You're registered!</h2>
               </div>
               <p>Please have cash ready for us on November 4th.  You can pay up front or in weekly installments of $120 every Tuesday.</p>
             </div>
@@ -129,6 +131,12 @@
       </div>
 
       <div class="modal-body">
+        <div class="alert alert-danger" id="not_registered" style="display: none">
+          Your email wasn't found.  You need to <a id="register_link" style="cursor: pointer">register</a> before you can order.
+        </div>
+        <div class="alert alert-warning" id="order_warning" style="display: none">
+          You have selected <span id="warning_count"></span> out of 8 items.  We'll pick for you if you like.
+        </div>
         <ul id="list"></ul>
         <form id="confirm_form">
           <div class="form-group">
@@ -138,7 +146,9 @@
         </form>
       </div>
       <div class="modal-footer">
+        <button type="button" id="cancel" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="button" id="confirm" class="btn btn-primary">Confirm</button>
+        <button type="button" id="order_close" class="btn btn-primary" data-dismiss="modal" style="display: none">Close</button>
       </div>
     </div>
   </div>

@@ -17,7 +17,7 @@ module.exports =
       (err, html) ->
 
         email = new sendgrid.Email(
-          to: "#{req.body.email}; sea.green@gmail.com"
+          to: [req.body.email, 'sea.green@gmail.com']
           from: 'sea.green@gmail.com'
           subject: 'Karma Farma Order'
           html: html
