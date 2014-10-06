@@ -151,8 +151,7 @@ $(->
     $.get("/users/#{encodeURIComponent(email)}", (data) ->
       if data and data != "null"
         $.post('/orders', email: 'asoltys@gmail.com', week: 'Nov4', order: JSON.stringify(g.order))
-        $('#confirmation .modal-body').html('<h2 class="alert alert-success">Thanks! Your order has been placed!</h2>')
-        $('#order_close, #order_done').show()
+        $('#order_close, #order_done, #order_placed').show()
         $('#cancel, #confirm').hide()
       else
         $('#not_registered').show()
