@@ -1,6 +1,7 @@
 #= require bootstrap.min.js
 #= require items.coffee
 #= require qrcode.js
+#= require check_email.js
 
 g = this
 $(->
@@ -52,7 +53,7 @@ $(->
     span = $(this).siblings('.count')
     count = parseInt(span.html())
     total = parseInt($(this).closest('.items').find('h3 .count').html())
-    max = parseInt($(this).closest('.items').find('.max').html())
+    max = 2
 
     n = 1
     n = -1 if $(this).hasClass('minus')
@@ -100,15 +101,33 @@ $(->
     $('#email').focus()
   )
 
-  $('#order').click(->
-    order = []
+  $('#order').click(-> 
+    g.order = []
+    $('#list').html('')
+
     $('.img:not(.grayscale)').closest('.item').each(->
       name = $(this).find('.name').html()
       count = $(this).find('.panel-body .count').html()
-      order.push(item: name, count: count)
+      g.order.push(item: name, count: count)
+      $('#list').append("<li><b>#{count}x</b> #{name}</li>")
     )
 
-    $.post('/orders', email: 'asoltys@gmail.com', week: 1, order: JSON.stringify(order))
+    $('#confirmation').modal()
+  )
+
+  $('#confirm').click(->
+    email = $('#order_email').val()
+    unless validateEmail(email)
+      $('#order_email').parent().addClass('has-error')
+      return
+
+    $.get("/users/#{encodeURIComponent(email)}", (data) ->
+      if data and data != "null"
+        $.post('/orders', email: 'asoltys@gmail.com', week: 1, order: JSON.stringify(g.order))
+        $('#confirmation').modal('hide')
+      else
+        $('#order_email').parent().addClass('has-error')
+    )
   )
 
   for item in g.items

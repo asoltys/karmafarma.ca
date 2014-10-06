@@ -60,6 +60,7 @@ app.get('/', (req, res) ->
   )
 )
 
+app.get('/users/:email', users.show)
 app.post('/users', users.create)
 app.post('/orders', orders.create)
 

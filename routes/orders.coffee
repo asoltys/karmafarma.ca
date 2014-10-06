@@ -9,14 +9,15 @@ module.exports =
     )
 
     res.render('order', 
-      layout: 'mail',
-      order: JSON.parse(req.body.order),
-      js: (-> global.js), 
-      css: (-> global.css),
+      layout: 'mail'
+      order: JSON.parse(req.body.order)
+      week: req.body.week
+      js: (-> global.js)
+      css: (-> global.css)
       (err, html) ->
 
         email = new sendgrid.Email(
-          to: req.body.email
+          to: "#{req.body.email}; sea.green@gmail.com"
           from: 'sea.green@gmail.com'
           subject: 'Karma Farma Order'
           html: html
