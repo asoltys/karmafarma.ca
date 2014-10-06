@@ -16,6 +16,7 @@
     "mmm": "0.2.1",
     "nodemailer": "0.5.2",
     "redis": "0.8.5",
-    "sendgrid": "~1.2.0"
+    "sendgrid": "~1.2.0",
+    "request": "~2.45.0"
   }
 }
