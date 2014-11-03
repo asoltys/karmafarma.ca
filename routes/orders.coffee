@@ -12,6 +12,7 @@ module.exports =
       layout: 'mail'
       order: JSON.parse(req.body.order)
       week: req.body.week
+      email: req.body.email
       js: (-> global.js)
       css: (-> global.css)
       (err, html) ->
