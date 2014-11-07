@@ -1,7 +1,7 @@
 window.items = [
   type: 'Entree'
   name: 'Thai Pork, Turkey and Veggie Meatballs with Cauliflower Rice (Low Carb)'
-  description: 'These pork, turkey and veggie meatballs have an Asian flare with flavours of ginger, sesame and (gluten­free) tamari. Served with a delicious sauce and “cauliflower rice.”'
+  description: 'These pork, turkey and veggie meatballs have an Asian flare with flavours of ginger, sesame and (gluten-free) tamari. Served with a delicious sauce and “cauliflower rice.”'
   ingredients: 'ground pork, ground turkey, carrot, zucchini, ginger, sesame oil, basil, garlic, currypowder, chili flakes, sea salt, black pepper, coconut milk, almond butter, gluten­free tamari, pineapple juice, cauliflower'
   image: '/img/meatball.jpg'
 ,
@@ -13,13 +13,13 @@ window.items = [
 ,
   type: 'Entree'
   name: 'Slow Cooked Chicken and Gravy with Sautéed Greens (Low Carb)'
-  description: 'Mmmm gravy. If you need to know more, I\'m using non-medicated, free­range chicken and slow cooking it on low heat to retain moisture. The veggies, herbs, spices and juices it\'s cooked in are blended into the gravy. Served with healthy, farm­fresh sautéed greens.'
+  description: 'Mmmm gravy. If you need to know more, I\'m using non-medicated, free­range chicken and slow cooking it on low heat to retain moisture. The veggies, herbs, spices and juices it\'s cooked in are blended into the gravy. Served with healthy, farm-fresh sautéed greens.'
   ingredients: 'chicken, ghee, onion, garlic, tomato paste, chicken bone broth, thyme, sage, rosemary, sea salt, black pepper, collards, kale'
   image: '/img/chicken_gravy.jpg'
 ,
   type: 'Entree'
   name: 'Beef and Butternut Stew with Pear and Thyme (Autoimmune Protocol Approved)'
-  description: 'This stew is all about the bounty of autumn. The butternut squash gives heartiness and texture to a grass­fed beef stew. Pear adds sweetness and cinnamon and thyme add that extra dimension of flavour.'
+  description: 'This stew is all about the bounty of autumn. The butternut squash gives heartiness and texture to a grass-fed beef stew. Pear adds sweetness and cinnamon and thyme add that extra dimension of flavour.'
   ingredients: 'beef, butternut squash, onion, garlic, ginger, beef bone broth, coconut oil, mushroon, pear, sea salt, thyme, cinnamon, black pepper'
   image: '/img/beef_butternut.jpg'
 ,
@@ -31,7 +31,7 @@ window.items = [
 ,
   type: 'Salad'
   name: 'Waldorf Salad (Low Carb)'
-  description: 'This classic Waldorf salad is served with paleo­approved homemade mayonaise dressing and roasted chicken to add some extra protein.'
+  description: 'This classic Waldorf salad is served with paleo-approved homemade mayonaise dressing and roasted chicken to add some extra protein.'
   ingredients: 'chicken, walnuts, apple, lemon juice, celery, romaine lettuce, olive oil, egg, sea salt, black pepper'
   image: '/img/waldorf.jpg'
 ,
