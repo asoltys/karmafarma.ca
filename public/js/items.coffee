@@ -13,7 +13,7 @@ window.items = [
 ,
   type: 'Entree'
   name: 'Slow Cooked Chicken and Gravy with Sautéed Greens (Low Carb)'
-  description: 'Mmmm gravy. If you need to know more, I\'m using non-medicated, free­range chicken and slow cooking it on low heat to retain moisture. The veggies, herbs, spices and juices it\'s cooked in are blended into the gravy. Served with healthy, farm-fresh sautéed greens.'
+  description: 'Mmmm gravy. If you need to know more, I\'m using non-medicated, free-range chicken and slow cooking it on low heat to retain moisture. The veggies, herbs, spices and juices it\'s cooked in are blended into the gravy. Served with healthy, farm-fresh sautéed greens.'
   ingredients: 'chicken, ghee, onion, garlic, tomato paste, chicken bone broth, thyme, sage, rosemary, sea salt, black pepper, collards, kale'
   image: '/img/chicken_gravy.jpg'
 ,
