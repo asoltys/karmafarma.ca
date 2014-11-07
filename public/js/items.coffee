@@ -32,7 +32,7 @@ window.items = [
   type: 'Salad'
   name: 'Waldorf Salad (Low Carb)'
   description: 'This classic Waldorf salad is served with paleo­approved homemade mayonaise dressing and roasted chicken to add some extra protein.'
-  ingredients: 'walnuts, apple, lemon juice, celery, romaine lettuce, olive oil, egg, sea salt, black pepper'
+  ingredients: 'chicken, walnuts, apple, lemon juice, celery, romaine lettuce, olive oil, egg, sea salt, black pepper'
   image: '/img/waldorf.jpg'
 ,
   type: 'Soup'
