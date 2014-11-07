@@ -1,49 +1,50 @@
 window.items = [
   type: 'Entree'
-  name: 'Slow Roasted Duck Leg with Roasted Potatoes and Root Vegetables (Low FODMAP)'
-  description: 'Peking duck leg is slow roasted to achieve perfectly moist meat and deliciously crispy skin.  Potatoes, carrots and parsnips are roasted alongside the duck and seasoned with lemon and fresh herbs.'
-  ingredients: ['duck, potato, parsnip, carrot, lemon, thyme, rosemary, sage, sea salt, black pepper']
-  image: '/img/duck.jpg'
+  name: 'Filipino Kare Kare Oxtail Stew (Low Carb)'
+  description: 'This delicious Filipino style stew provides the same nutrition as a bone broth as the organic, grass-fed oxtails are slowly simmered for hours. Packed full of healthy vegetables, the aromatic flavours of onions and garlic, a hint of nuttiness, and the exotic tastes of lime and fish sauce. Served with cauliflower "rice".'
+  ingredients: 'oxtails, cauliflower, eggplant, baby bok choy, green beans, almond butter, fish sauce, chilli flakes, lime, onion, garlic, bay leaves, coconut oil, sea salt, black pepper'
+  image: '/img/kare_kare.jpg'
 ,
   type: 'Entree'
-  name: 'Braised Beef Brisket with Roasted Red Cabbage and  Sautéed Kale (Low Carb)'
-  description: 'This grass-fed beef brisket from the Comox Valley is rubbed with coffee and cinnamon and then simmers for almost half a day with brandy, caramelized onions, orange zest and prunes.'
-  ingredients: ['beef, red cabbage, kale, celery, onions, garlic, ghee, brandy, apple cider vinegar, vegetable juice, orange, prune, coffee, cinnamon, sea salt, black pepper']
-  image: '/img/beef_brisket.jpg'
+  name: 'Beef and Broccoli with Saut&eacute;ed Green Cabbage (Low Carb and Autoimmune Protocol Approved)'
+  description: 'Slow­cooked, grass­fed strips of beef combined with perfectly cooked broccoli florets and julienned carrots in a teriyaki­style sauce that is sweetened with pineapple juice. All served over green cabbage saut&eacute;ed in coconut oil.'
+  ingredients: 'beef, broccoli, carrot, pineapple juice, garlic, ginger, coconut aminos, rice vinegar, potato starch, green cabbage, coconut oil, sea salt'
+  image: '/img/beef_broccoli.jpg'
 ,
   type: 'Entree'
-  name: 'Chicken Biryani with Saffron Caulifower “Rice” and Sautéed Swiss Chard (Low Carb)'
-  description: 'An Indian classic and one of Adam\'s favourite dinners.  Bone-in, skin-on chicken thighs from free-range,  non-medicated chickens in a tomato-based sauce with mild Indian spices.  Sautéed shredded cauliflower (or cauliflower “rice”) in place of regular rice lowers the carb count on this meal.'
-  ingredients: ['chicken, ghee, onion, tomato, coconut milk, garlic, mint, cardamom, tumeric, black pepper, ginger, cumin, chili flakes, cinnamon, sea salt, cauliflower, saffron, swiss chard']
-  image: '/img/chicken_biryani.jpg'
+  name: 'Moroccan Chicken with Roasted Yams and Saut&eacute;ed Kale (Autoimmune Protocol Approved)'
+  description: 'Sweet oranges and apricots and the Moroccan spices of cinnamon, nutmeg and cumin liven up these organic, free­range chicken thighs. Served alongside slightly crispy roasted yams and saut&eacute;ed kale.'
+  ingredients: 'chicken, carrot, celery, onion, garlic, oranges, dried apricots, cinnamon, nutmeg, cumin, corriander, sea salt, black pepper, yam, kale, coconut oil'
+  image: '/img/morocan_chicken.jpg'
 ,
   type: 'Entree'
-  name: 'Meatloaf with Creamy Turnip and Garlic Purée and Steamed Lemon Broccoli (Low Carb and Autoimmune Protocol Approved)'
-  description: 'This hearty meatloaf is packed with nutritious veggies and fresh herbs and has none of the empty fillers in traditional meatloaf.  Baked with naturally-smoked strips of bacon on top to add that extra dimension of flavour.'
-  ingredients: ['ground beef, bacon, egg, cauliflower, zucchini, carrot, onion, garlic, parsley, thyme, coconut oil, sea salt, turnip, ghee, broccoli, lemon juice']
-  image: '/img/meatloaf.jpg'
-,
-  type: 'Soup'
-  name: 'Roasted Butternut Squash, Lime and Coconut Soup'
-  description: 'The lime and coconut milk add a tropical flare to this warming puréed sqaush soup.'
-  ingredients: ['butternut squash, onion, coconut oil, chicken bone broth, lime, coconut milk, cilantro, jalapeno, cumin, corriander, sea salt, black pepper']
-  image: '/img/squash_soup.jpg'
-,
-  type: 'Soup'
-  name: 'Cream of Broccoli Soup (Low Carb and Autoimmune Protocol Approved)'
-  description: 'Puréeing some of the veggies and adding coconut milk makes this soup satisfyingly creamy.'
-  ingredients: ['broccoli, rutabaga, mushroom, onion, garlic, coconut oil, chicken bone broth, coconut milk, sea salt, black pepper']
-  image: '/img/broccoli_soup.jpg'
+  name: 'Spaghetti Squash Bolognese (Low Carb)'
+  description: 'Spaghetti squash “noodles” are topped with grass­fed ground beef and hearty veggie sauce that becomes extra rich and delicious with the addition of coconut milk and bacon.'
+  ingredients: 'spaghetti squash, ghee, ground beef, bacon, coconut milk, tomato, tomato paste, carrot, zucchini, onion, garlic, oregano, thyme, sea salt, black pepper'
+  image: '/img/spaghetti_squash.jpg'
 ,
   type: 'Salad'
-  name: 'Chinese Chicken Salad (Low Carb and Low FODMAP)'
-  description: 'Lots of veggies, tasty chicken and refreshing orange segments in a tangy ginger, tamari and sesame dressing.'
-  ingredients: ['chicken, arugala, lettuce, carrot, celery, orange, bean sprouts, cilantro, green onion (green parts only), sesame seeds, ginger, olive oil, sesame oil, rice vinegar, tamari, chili flakes, sea salt']
-  image: '/img/chinese_salad.jpg'
+  name: 'Cobb Salad (Low Carb, Low FODMAP)'
+  description: 'Just like the classic cobb salad with hard boiled eggs and bacon, but with a helathy avocado dressing.'
+  ingredients: 'egg, bacon, romaine lettuce, kale, cherry tomato, cucumber, avocado, olive oil, water, apple cider vinegar, dijon mustard, lemon juice, garlic powder, sea salt, black pepper'
+  image: '/img/cobb_salad.jpg'
 ,
   type: 'Salad'
-  name: 'Wild Sockeye Salmon Cake and Winter Greens Salad (Low Carb and Low FODMAP)'
-  description: 'A slightly crispy wild sockeye salmon cake on a bed of arugala, spinach, kale and cucumber in a balsamic dressing.'
-  ingredients: ['wild sockeye salmon, arugala, spinach, kale, cucumber, egg, almond flour, coconut flour, coconut oil, cilantro, extra virgin olive oil, balsamic vinegar, mustard powder, sea salt, black pepper']
-  image: '/img/salmon_salad.jpg'
+  name: 'Roasted Beet, Kale and Chicken Salad (Low Carb)'
+  description: 'A locavore\'s special! Everything comes from a small, organic Richmond farm. Well, everything 
+minus the ingredients in the dressing.'
+  ingredients: 'chicken, beet, kale, green cabbage, red pepper, purple onion, olive oil, balsamic vinegar, lemon juice, cappers, sea salt, black pepper'
+  image: '/img/beet_chicken_salad.jpg'
+,
+  type: 'Soup'
+  name: 'Carrot Ginger Soup'
+  description: 'The sweetness of locally harvested, organic carrots really shines in this soup, with ginger providing a complementary taste.'
+  ingredients: 'carrot, celery, potato, ginger, onion, ghee, chicken bone broth, nutmeg, sea salt, black pepper'
+  image: '/img/carrot_soup.jpg'
+,
+  type: 'Soup'
+  name: 'Curried Celery Soup (Low Carb)'
+  description: 'This is my mom\'s recipe and it never fails to warm and comfort me on cold, wet Vancouver days.  The mild curry spices perfectly complement the celery and the rutabaga adds body and sweetness.'
+  ingredients: 'celery, rutabaga, leek, chicken bone broth, onion, ghee, tumeric, corriander, cumin, mustard seeds, chilli flakes, ground ginger, bay leaf, parsley, lovage, thyme, sea salt'
+  image: '/img/celery_soup.jpg'
 ]
