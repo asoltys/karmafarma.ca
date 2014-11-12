@@ -9,8 +9,8 @@ $(->
     g.rates = data
 
     $('#bitcoin').click(->
-      rate = g.rates.CAD.cavirtex.rates.bid
-      g.amount = parseFloat(450 / rate).toFixed(8)
+      rate = g.rates.CAD.quadrigacx.rates.bid
+      g.amount = parseFloat(168 / rate).toFixed(8)
       g.address = '15dRBzyg68NXRraGQVpa4MgbohyZEFH7sM'
 
       $('#request h2').html("Please send #{g.amount} BTC to:")
