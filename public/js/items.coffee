@@ -24,7 +24,7 @@ window.items = [
   image: '/img/tumeric_stir_fry.jpg'
 ,
   type: 'Salad'
-  name: 'Red Cabbage Slaw with Tangy Carrot Ginger Dressing (Low Carb and Low FODMAP)'
+  name: 'Red Cabbage Slaw with Tangy Carrot-Ginger Dressing (Low Carb and Low FODMAP)'
   description: 'The acidity in this tangy dressing is cut really well by the raw cabbage. Julienned carots, cilantro, green onions and lots of toasted almonds round out this salad.'
   ingredients: 'red cabbage, carrot, cilantro, green onion, almonds, egg, avocado oil, dijon mustard, apple cider vinegar, ginger, sea salt, black pepper'
   image: '/img/red_cabbage_slaw.jpg'
@@ -43,7 +43,7 @@ window.items = [
 ,
   type: 'Soup'
   name: 'Mushroom and Ginger Soup (Low Carb and Autoimmune Protocol Approved)'
-  description: 'You may want to save this soup in the freezer to defrost the next time you\'re sick with a cold.  Ginger is an excellent decongestant and mushrooms boost the immune system in the presence of a viral illness. Just take a look at <a href="http://drdaphne.com/article/the-surprising-healing-qualities-of-dirt/">this article</a> written by an American family physician who regularly prescribes this soup to her patients coming in with the common cold'
+  description: 'You may want to save this soup in the freezer (in your own container, don\'t freeze the jar or it might explode) to defrost the next time you\'re sick with a cold.  Ginger is an excellent decongestant and mushrooms boost the immune system in the presence of a viral illness. Just take a look at <a href="http://www.washingtonpost.com/wp-dyn/content/article/2009/05/22/AR2009052202280.html">this article</a> written by an American family physician who regularly prescribes this soup to her patients coming in with the common cold'
   ingredients: 'mushroom, ginger, water, miso paste, rice vinegar, green onion'
   image: '/img/mushroom_ginger_soup.jpg'
 ]
