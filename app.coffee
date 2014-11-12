@@ -53,6 +53,7 @@ app.get('/', (req, res) ->
     users = 10 - result.length
     res.render('index',
       users: users
+      register: req.query.register?
       js: (-> global.js)
       css: (-> global.css)
       layout: 'layout'
