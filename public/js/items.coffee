@@ -7,7 +7,7 @@ window.items = [
 ,
   type: 'Entree'
   name: 'Pomegranate Jalepeno Shredded Beef with Mashed Sweet Potatoes'
-  ingredients: 'This grass­fed beef chuck roast is slowly braised in nutrious beef bone broth and sweet pomegranate juice. Jalepeno peppers provide a mild spicy addition.'
+  description: 'This grass­fed beef chuck roast is slowly braised in nutrious beef bone broth and sweet pomegranate juice. Jalepeno peppers provide a mild spicy addition.'
   ingredients: 'beef, sweet potato, ghee, jalepeno, beef bone broth, pomegranate juice, sea salt, black pepper'
   image: '/img/shredded_beef.jpg'
 ,
@@ -19,6 +19,7 @@ window.items = [
 ,
   type: 'Entree'
   name: 'Spaghetti Squash and Meatballs (Low Carb)' 
+  description: 'No grains in this classic Italian dish – the spaghetti squash lowers the carb count and it\'s actually more flavourful than spaghetti noodles'
   ingredients: 'spaghetti squash, ground beef, ground pork, egg, tomato, carrot, onion, garlic, parsley, basil, oregano, extra-virgin olive oil, sea salt, black pepper'
   image: '/img/spag_squash_meatballs.jpg'
 ,
