@@ -153,7 +153,7 @@ $(->
 
     $.get("/users/#{encodeURIComponent(email)}", (data) ->
       if data and data != "null"
-        $.post('/orders', email: email, week: 'Nov18', order: JSON.stringify(g.order))
+        $.post('/orders', email: email, week: 'Nov21', order: JSON.stringify(g.order))
         $('#order_close, #order_done, #order_placed').show()
         $('#order_cancel, #order_confirm, #order_warning').hide()
       else

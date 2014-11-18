@@ -36,8 +36,8 @@ window.items = [
   image: '/img/borscht.jpg'
 ,
   type: 'Salad'
-  name: 'Chicken Caesar Salad'
-  description: 'Just like a traditional, creamy-caesar salad dressing. Featuring healthy fats from cashews, extra-virgin olive oil and pastured eggs. Cherry tomatoes are used to separate the dressing from the lettuce in the jar, but they also make a fresh and tasty addition to the salad.'
+  name: 'Chicken Caesar Salad (Low Carb)'
+  description: 'Just like a traditional, creamy caesar salad dressing. Featuring healthy fats from cashews, extra-virgin olive oil and pastured eggs. Cherry tomatoes are used to separate the dressing from the lettuce in the jar, but they also make a fresh and tasty addition to the salad.'
   ingredients: 'chicken, romaine lettuce, cashews, extra­virgin olive oil, egg, water, lemon, garlic, sea salt, black pepper'
   image: '/img/chicken_caesar_salad.jpg'
 ,
