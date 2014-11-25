@@ -19,7 +19,7 @@ window.items = [
 ,
   type: 'Entree'
   name: 'Chinese Orange Chicken with Cauliflower Rice (Low Carb)' 
-  description: 'I wanted to make this classic Chinese take-out dish the healthy way, but I couldn't totally omit the sweetener.  I have used some honey in this recipe, but only 1 teaspoon per serving, so the carb count still stays low.  Savoury flavours without the MSG.'
+  description: 'I wanted to make this classic Chinese take-out dish the healthy way, but I couldn\'t totally omit the sweetener.  I have used some honey in this recipe, but only 1 teaspoon per serving, so the carb count still stays low.  Savoury flavours without the MSG.'
   ingredients: 'chicken, cauliflower, broccoli, carrot, orange, ginger, tamari, rice vinegar, honey, garlic powder, red pepper flakes, potato starch, sesame oil, coconut oil, sea salt'
   image: '/img/chinese_orange_chicken.jpg'
 ,
