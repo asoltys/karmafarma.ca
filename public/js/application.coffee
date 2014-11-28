@@ -49,7 +49,7 @@ $(->
     n = -1 if $(this).hasClass('minus')
 
     return if count is 0 and n is -1
-    return if total is 4 and n is 1
+    return if count is 4 and n is 1
 
     count += n
 
