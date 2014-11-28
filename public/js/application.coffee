@@ -7,26 +7,6 @@ g = this
 $(->
   $.get('/js/rates.json', (data) ->
     g.rates = data
-
-    $('#bitcoin').click(->
-      rate = g.rates.CAD.quadrigacx.rates.bid
-      g.amount = parseFloat(168 / rate).toFixed(8)
-      g.address = '15dRBzyg68NXRraGQVpa4MgbohyZEFH7sM'
-
-      $('#request h2').html("Please send #{g.amount} BTC to:")
-      $('#address').html(g.address)
-
-      $('#qr').html('')
-      new QRCode('qr', 
-        text: "bitcoin:#{g.address}?amount=#{g.amount}"
-        width: 250
-        height: 250
-      )
-
-      $('#cancel, #pay_bitcoin').show()
-      $('#choose').hide()
-      setTimeout(listen, 10000) unless g.blockchain
-    )
   )
 
   $('#cash').click(->
@@ -63,7 +43,7 @@ $(->
 
     span = $(this).siblings('.count')
     count = parseInt(span.html())
-    total = parseInt($(this).closest('.row').find('div.count').html())
+    total = parseInt($('div.count').html())
 
     n = 1
     n = -1 if $(this).hasClass('minus')
@@ -94,13 +74,13 @@ $(->
   )
 
   updateTotals = ->
+    count = 0
     $('.items').each(->
-      count = 0
       $(this).find('div.item span.count').each(-> 
         count += parseInt($(this).html())
       )
-      $(this).closest('.row').find('div.count').html(count.toString())
     )
+    $('div.count').html(count.toString())
 
   $(document).on('click', '.item', -> $(this).find('.plus').click())
 
@@ -129,13 +109,30 @@ $(->
     )
 
     $('#warning_count').html(total)
-    $('#order_warning').toggle(total < 8)
+    $('#order_warning').toggle(total < 3)
 
     $('#confirmation').modal()
   )
 
   $('#confirmation').on('shown.bs.modal', ->
     $('#order_email').focus()
+    rate = g.rates.CAD.quadrigacx.rates.bid
+    price = parseInt($('div.count').html() * 10)
+    price += 10 if price < 30
+    g.amount = parseFloat(price / rate).toFixed(8)
+    g.address = '15dRBzyg68NXRraGQVpa4MgbohyZEFH7sM'
+
+    $('#payment_details').html("You can pay now by transferring #{g.amount} BTC to:")
+    $('#address').html(g.address)
+
+    $('#qr').html('')
+    new QRCode('qr', 
+      text: "bitcoin:#{g.address}?amount=#{g.amount}"
+      width: 250
+      height: 250
+    )
+
+    setTimeout(listen, 10000) unless g.blockchain
   )
 
   $('#confirm_form').submit(->
@@ -205,9 +202,8 @@ listen = ->
       )
 
       if amount >= g.amount
-        $('#registered, #close').show()
+        $('#paid').show()
         $('#request, #cancel').hide()
-        register()
 
 register = ->
   $.post('/users', $('#register').serialize())

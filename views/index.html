@@ -1,10 +1,9 @@
-
 <div class="jumbotron">
   <div>
     <h1>December 2014</h1>
-    <p>Order week-by-week, &agrave; la carte style, 3 items minimum.</p>
+    <p>Order week-by-week, &agrave; la carte style.  Each item is $10, order 3 items minimum for free delivery.</p>
     <p>There will be three delivery dates:  Dec. 2, Dec. 9, and Dec. 16 (the first three Tuesdays of the month).</p>
-    <p>Please place your orders by the Sunday before.  You can pay as you go with Bitcoin through this website (preferred) or I'll bill you by the 16th and you can pay cash, cheque, or Interac e-Transfer.</p>
+    <p>Please place your orders by the Sunday before.  You can pay as you go with Bitcoin or I can bill you by the 16th and you can pay cash, cheque, or Interac e-Transfer.</p>
     <p>This program is only available for existing clients.  If you would like to become a client, please email to check if I currently have room for you.</p>
     <p>Thank you, Chelsea</p>
     <a href="/about"><button type="button" class="btn btn-primary">Learn More »</button></a>
@@ -37,94 +36,6 @@
   <button id="order" type="button" class="btn btn-primary lead">Place Order</button>
 </div>
 
-<div class="modal fade" id="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Registration</h4>
-      </div>
-
-      <div class="modal-body">
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="active"><a id="step1_link" href="#step1" role="tab" data-toggle="tab">Details</a></li>
-          <li><a id="step2_link" href="#step2" role="tab" data-toggle="tab">Payment</a></li>
-        </ul>
-        <div class="tab-content">
-          <div id="step1" class="tab-pane active">
-            <form id="register">
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" class="form-control" />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" class="form-control" />
-              </div>
-
-              <div class="form-group">
-                <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone" class="form-control" />
-              </div>
-
-              <div class="form-group">
-                <label for="address">Delivery Address:</label>
-                <textarea name="address" class="form-control" placeholder="Home or office address where the meals should be delivered"></textarea>
-              </div>
-
-              <div class="form-group">
-                <label for="notes">Notes/Allergies:</label>
-                <textarea id="notes" name="notes" class="form-control" placeholder="e.g. Come to the 4th floor and leave the meals in the cooler at the reception desk.  I'm allergic to nuts."></textarea>
-              </div>
-
-              <input type="submit" style="position: absolute; left: -9999px" />
-            </form>
-          </div>
-          <div id="step2" class="tab-pane">
-            <div id="registered" class="alert alert-success" style="margin-top: 15px; display: none">
-              <h2>Ok!  You're registered!</h2>
-              <p>You can place your order on the homepage now for your first delivery.</p>
-            </div>
-
-            <div id="choose">
-              <h2>Select a Payment Option</h2>
-
-              <button id="bitcoin" type="button" class="btn btn-default" style="width: 100%">
-                <span class="lead" style="margin-bottom: -20px">Bitcoin - $168</span><br />
-                <small style="font-size: 18px">(need bitcoins?  try <a href="http://circle.com/" target="_blank">circle.com</a>)</small>
-              </button>
-              <br /><br />
-              <button id="cash" type="button" class="btn btn-default" style="width: 100%">
-                <span class="lead" style="margin-bottom: -20px">Cash - $180</span><br />
-                <small style="font-size: 18px">(payable upon first delivery or in weekly installments)</small>
-              </button>
-            </div>
-
-            <div id="pay_bitcoin" style="display: none">
-              <div id="request" class="text-center">
-                <h2></h2>
-                <h4 id="address"></h4>
-                <div id="qr" style="margin-left: 150px; margin-bottom: 15px;"></div>
-                <p>Need to get some Bitcoins?  Try <a href="http://circle.com/" target="_blank">circle.com</a>. They take VISA.</p>
-              </div>
-            </div>
-
-            <div id="pay_cash" style="display: none">
-              <p>Please have cash ready for us at your first delivery.  You can pay $480 up front or in weekly installments of $120 every Tuesday delivery day.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" id="next" class="btn btn-primary">Next</button>
-        <button type="button" id="cancel" class="btn btn-default" style="display: none">Cancel</button>
-        <button type="button" id="close" class="btn btn-primary" style="display: none" data-dismiss="modal">OK</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="modal fade" id="confirmation" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -138,12 +49,24 @@
           Your email wasn't found.  You need to <a id="register_link" style="cursor: pointer">register</a> before you can order.
         </div>
         <div class="alert alert-warning" id="order_warning" style="display: none">
-          You have selected <span id="warning_count"></span> out of 8 items.  We'll pick the rest for you.
+          You selected less than 3 items.  There will be a $10 delivery charge.
         </div>
         <div class="alert alert-success" id="order_placed" style="display: none">
           <h2>Thanks! Your order has been placed!</h2>
         </div>
+        <div class="alert alert-success" id="paid" style="display: none">
+          <h2>Thanks!  Payment received!</h2>
+        </div>
+
         <ul id="list"></ul>
+        <div id="pay_bitcoin">
+          <div id="request" class="text-center">
+            <p id="payment_details"></p>
+            <h4 id="address"></h4>
+            <div id="qr" style="margin-left: 150px; margin-bottom: 15px;"></div>
+            <p>Need to get some Bitcoins?  Try <a href="http://circle.com/" target="_blank">circle.com</a>. Registration is free and easy and you can buy Bitcoins with your credit card there.</p>
+          </div>
+        </div>
         <form id="confirm_form">
           <div class="form-group">
             <label for="email">Your Email:</label>
