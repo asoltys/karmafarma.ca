@@ -64,14 +64,12 @@ $(->
     span = $(this).siblings('.count')
     count = parseInt(span.html())
     total = parseInt($(this).closest('.items').find('h3 .count').html())
-    max = parseInt($(this).closest('.items').find('.max').html())
 
     n = 1
     n = -1 if $(this).hasClass('minus')
 
     return if count is 0 and n is -1
-    return if count is 2 and n is 1
-    return if total is max and n is 1
+    return if total is 4 and n is 1
 
     count += n
 
