@@ -63,7 +63,7 @@ $(->
 
     span = $(this).siblings('.count')
     count = parseInt(span.html())
-    total = parseInt($(this).closest('.items').find('h3 .count').html())
+    total = parseInt($(this).closest('.row').find('div.count').html())
 
     n = 1
     n = -1 if $(this).hasClass('minus')
@@ -99,7 +99,7 @@ $(->
       $(this).find('div.item span.count').each(-> 
         count += parseInt($(this).html())
       )
-      $(this).find('h3 span.count').html(count.toString())
+      $(this).closest('.row').find('div.count').html(count.toString())
     )
 
   $(document).on('click', '.item', -> $(this).find('.plus').click())
