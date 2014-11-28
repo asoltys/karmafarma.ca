@@ -167,7 +167,7 @@ $(->
     $('#modal').modal()
   )
 
-  for item in g.items
+  for item, i in g.items
     div = $('.item').first().clone()
     div.removeAttr('id')
     div.find('.img').css('background-image', "url(#{item.image})")
@@ -175,17 +175,9 @@ $(->
     div.find('.description').html(item.description)
     div.find('.ingredients').html(item.ingredients.toString())
     div.show()
-
-    switch item.type
-      when 'Entree'
-        $('#entrees').append(div)
-      when 'Soup'
-        $('#soups').append(div)
-      when 'Salad'
-        $('#salads').append(div)
+    $("#entrees_#{i%2}").append(div)
 
   $('#item').remove()
-
 )
 
 listen = ->
