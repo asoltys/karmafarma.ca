@@ -7,26 +7,6 @@ g = this
 $(->
   $.get('/js/rates.json', (data) ->
     g.rates = data
-
-    $('#bitcoin').click(->
-      rate = g.rates.CAD.quadrigacx.rates.bid
-      g.amount = parseFloat(168 / rate).toFixed(8)
-      g.address = '15dRBzyg68NXRraGQVpa4MgbohyZEFH7sM'
-
-      $('#request h2').html("Please send #{g.amount} BTC to:")
-      $('#address').html(g.address)
-
-      $('#qr').html('')
-      new QRCode('qr', 
-        text: "bitcoin:#{g.address}?amount=#{g.amount}"
-        width: 250
-        height: 250
-      )
-
-      $('#cancel, #pay_bitcoin').show()
-      $('#choose').hide()
-      setTimeout(listen, 10000) unless g.blockchain
-    )
   )
 
   $('#cash').click(->
@@ -63,15 +43,13 @@ $(->
 
     span = $(this).siblings('.count')
     count = parseInt(span.html())
-    total = parseInt($(this).closest('.items').find('h3 .count').html())
-    max = parseInt($(this).closest('.items').find('.max').html())
+    total = parseInt($('div.count').html())
 
     n = 1
     n = -1 if $(this).hasClass('minus')
 
     return if count is 0 and n is -1
-    return if count is 2 and n is 1
-    return if total is max and n is 1
+    return if count is 4 and n is 1
 
     count += n
 
@@ -96,13 +74,13 @@ $(->
   )
 
   updateTotals = ->
+    count = 0
     $('.items').each(->
-      count = 0
       $(this).find('div.item span.count').each(-> 
         count += parseInt($(this).html())
       )
-      $(this).find('h3 span.count').html(count.toString())
     )
+    $('div.count').html(count.toString())
 
   $(document).on('click', '.item', -> $(this).find('.plus').click())
 
@@ -131,13 +109,30 @@ $(->
     )
 
     $('#warning_count').html(total)
-    $('#order_warning').toggle(total < 8)
+    $('#order_warning').toggle(total < 3)
 
     $('#confirmation').modal()
   )
 
   $('#confirmation').on('shown.bs.modal', ->
     $('#order_email').focus()
+    rate = g.rates.CAD.quadrigacx.rates.bid
+    price = parseInt($('div.count').html() * 10)
+    price += 10 if price < 30
+    g.amount = parseFloat(price / rate).toFixed(8)
+    g.address = '15dRBzyg68NXRraGQVpa4MgbohyZEFH7sM'
+
+    $('#payment_details').html("You can pay now by transferring #{g.amount} BTC to:")
+    $('#address').html(g.address)
+
+    $('#qr').html('')
+    new QRCode('qr', 
+      text: "bitcoin:#{g.address}?amount=#{g.amount}"
+      width: 250
+      height: 250
+    )
+
+    setTimeout(listen, 10000) unless g.blockchain
   )
 
   $('#confirm_form').submit(->
@@ -153,7 +148,7 @@ $(->
 
     $.get("/users/#{encodeURIComponent(email)}", (data) ->
       if data and data != "null"
-        $.post('/orders', email: email, week: 'Nov21', order: JSON.stringify(g.order))
+        $.post('/orders', email: email, week: 'Dec2', order: JSON.stringify(g.order))
         $('#order_close, #order_done, #order_placed').show()
         $('#order_cancel, #order_confirm, #order_warning').hide()
       else
@@ -167,7 +162,7 @@ $(->
     $('#modal').modal()
   )
 
-  for item in g.items
+  for item, i in g.items
     div = $('.item').first().clone()
     div.removeAttr('id')
     div.find('.img').css('background-image', "url(#{item.image})")
@@ -175,17 +170,9 @@ $(->
     div.find('.description').html(item.description)
     div.find('.ingredients').html(item.ingredients.toString())
     div.show()
-
-    switch item.type
-      when 'Entree'
-        $('#entrees').append(div)
-      when 'Soup'
-        $('#soups').append(div)
-      when 'Salad'
-        $('#salads').append(div)
+    $("#entrees_#{i%2}").append(div)
 
   $('#item').remove()
-
 )
 
 listen = ->
@@ -215,9 +202,8 @@ listen = ->
       )
 
       if amount >= g.amount
-        $('#registered, #close').show()
+        $('#paid').show()
         $('#request, #cancel').hide()
-        register()
 
 register = ->
   $.post('/users', $('#register').serialize())
