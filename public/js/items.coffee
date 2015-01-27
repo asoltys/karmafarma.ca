@@ -12,14 +12,14 @@ window.items = [
   image: '/img/meatloaf.jpg'
 ,
   type: 'Entree'
-  name: 'Japanese Beef Curry with Cauliflower Rice (Freezes Well)' 
+  name: 'Japanese Beef Curry with Cauliflower Rice (Freezes Well)'
   description: 'Japanese curry has a similar spice blend to Indian curry, but is made just a touch sweeter and thicker, making it hearty and warming on a rainy Vancouver day.  The grass-fed beef chuck perfectly tenderizes as it slowly stews in the curry.  Served with cauliflower rice.'
-  ingredients: 'beef, carrots, potatoes, apple, onion, ginger, garlic, beef bone broth, potato startch, ghee, curry powder, garam marsala, cayenne pepper, cloves, gluten/wheat-free tamari, tomato paste, sea salt, black pepper, cauliflower, coconut oil'
+  ingredients: 'beef, carrots, potatoes, apple, onion, ginger, garlic, beef bone broth, potato startch, ghee, curry powder, garam marsala, cayenne pepper, cloves, gluten-free tamari, tomato paste, sea salt, black pepper, cauliflower, coconut oil'
   image: '/img/japanese_curry.jpg'
 ,
   type: 'Entree'
   name: 'Hot and Sour Soup (Low Carb, Freezes Well)'
   description: 'A healthier version of one of my favourite Chinese take-out dishes.  Great for clearing out those sinuses too!'
-  ingredients: 'chicken, egg, carrots, mushrooms, green onion, ginger, chicken bone broth, coconut oil, sesame oil, wheat/gluten-free tamari, apple cider vinegar, chili flakes, onion powder, garlic powder, potato starch, sea salt, black pepper'
+  ingredients: 'chicken, egg, carrots, mushrooms, green onion, ginger, chicken bone broth, coconut oil, sesame oil, gluten-free tamari, apple cider vinegar, chili flakes, onion powder, garlic powder, potato starch, sea salt, black pepper'
   image: '/img/hot_and_sour_soup.jpg'
 ]
