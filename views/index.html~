@@ -1,10 +1,10 @@
 <div class="jumbotron">
   <div>
-    <h1>December 2014</h1>
-    <p>Order week-by-week, &agrave; la carte style.  Each item is $10, order 3 items minimum for free delivery.</p>
-    <p>There will be three delivery dates:  Dec. 2, Dec. 9, and Dec. 16 (the first three Tuesdays of the month).</p>
-    <p>Please place your orders by the Sunday before.  You can pay as you go with Bitcoin or I can bill you by the 16th and you can pay cash, cheque, or Interac e-Transfer.</p>
-    <p>This program is only available for existing clients.  If you would like to become a client, please email to check if I currently have room for you.</p>
+    <h2>Prepared Paleo Meals</h2>
+    <p>Order week-by-week, &agrave; la carte style.  Each item is $10, order 4 items minimum for free delivery.</p>
+    <p>Delivery will be every Tuesday between 9am-12noon</p>
+    <p>Please place your orders by the Sunday before.  You can pay as you go with Bitcoin or I can bill you at the end of the month and you can pay cash, cheque, or Interac e-Transfer.</p>
+    <p>This program is only available for existing clients.  If you would like to become a client, please email to check if I can accommodate you.</p>
     <p>Thank you, Chelsea</p>
     <a href="/about"><button type="button" class="btn btn-primary">Learn More »</button></a>
     {{#register}}
