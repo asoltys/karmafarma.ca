@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<h2><span class="fa fa-calendar"> Menu for Tuesday December 16 Delivery</span> <small>Selection open until midnight, Sunday December 14</small></h2>
+<h2><span class="fa fa-calendar"> Menu for Tuesday February 3 Delivery</span> <small>Selection open until midnight, Sunday February 1</small></h2>
 
 <div class="row">
   <div class="count" style="display: none"></div>
@@ -44,10 +44,10 @@
 
       <div class="modal-body">
         <div class="alert alert-danger" id="not_registered" style="display: none">
-          Your email wasn't found.  You need to <a id="register_link" style="cursor: pointer">register</a> before you can order.
+          Your email wasn't found.  Please contact <a href="mailto:sea.green@gmail.com">sea.green@gmail.com</a> if you would like to register.
         </div>
         <div class="alert alert-warning" id="order_warning" style="display: none">
-          You selected less than 3 items.  There will be a $10 delivery charge.
+          You selected less than 4 items.  There will be a $10 delivery charge.
         </div>
         <div class="alert alert-success" id="order_placed" style="display: none">
           <h2>Thanks! Your order has been placed!</h2>
