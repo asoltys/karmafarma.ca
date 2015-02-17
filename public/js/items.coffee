@@ -20,5 +20,6 @@ window.items = [
   type: 'Entree'
   name: 'Butternut Squash Soup (Freezes Well)'
   description: 'My good friend, Charlene, is going to teach me how to make her killer butternut squash soup.  No ingredient list yet, but she assures me that it is paleo-friendly.  The soup stock will be my chicken bone broth as per usual.'
+  ingredients: ''
   image: '/img/squash_soup.jpg'
 ]
